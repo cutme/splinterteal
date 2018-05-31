@@ -1,0 +1,2 @@
+prefixfree.min = tab menu for each area of law
+jssor.slider.debug = slider for each area of law
