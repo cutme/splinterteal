@@ -38,7 +38,6 @@ module.exports = {
                 test: /\.(jpg|png|svg)$/i,
                 exclude: /fonts/,
                 use: [
-                    //'file-loader?name=[name].[ext]&outputPath=img/&useRelativePath=true',
                     'file-loader?name=[name].[ext]&useRelativePath=true',
                     {
                         loader: 'image-webpack-loader',
@@ -55,7 +54,7 @@ module.exports = {
             
             { 
                 test: /\.(woff|woff2|eot|ttf|svg)$/, 
-                exclude: /img/,
+                exclude: /images/,
                 use: [
                     {
                         loader: 'url-loader?limit=100000',
